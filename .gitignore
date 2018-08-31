@@ -1,0 +1,11 @@
+/docker-compose.override.yaml
+/docker-compose.override.yml
+
+.DS_Store
+.idea/workspace.xml
+client/.DS_Store
+client/src/.DS_Store
+client/src/assets/.DS_Store
+.idea/vcs.xml
+.idea/dataSources/bb8e7328-42cb-4949-96ad-20aa34638fb5.xml
+.idea

@@ -1,0 +1,19 @@
+{
+    "*************** login_comment": "views/Login ***************",
+    "login.action.login": "Connexion",
+    "login.title": "Je me connecte",
+    "login.form.label.email": "E-mail...",
+    "login.form.label.password": "Mot de passe",
+    "login.form.error.bad_credentials": "L'adresse e-mail ou le mot de passe n'est pas valide.",
+    "login.form.error.oups": "Oups! panne de moteur!",
+
+    "*************** topBar_comment": "components/TopBar ***************",
+    "topBar.action.create_ride": "Proposer un trajet",
+    "topBar.action.login": "Se connecter",
+    "topBar.action.logout": "Se déconnecter",
+    "topBar.action.register": "Inscription",
+
+    "*************** welcome_comment": "views/Welcome ***************",
+    "welcome.info.campaign.message": "Et vous, qui allez-vous retrouver ?",
+    "welcome.info.campaign.sub_message": "Le covoiturage simplifie vos trajets"
+}
