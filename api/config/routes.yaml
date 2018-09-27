@@ -3,3 +3,17 @@
 #    controller: App\Controller\DefaultController::index
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+register_check_mail:
+    path: '/register/check_email'
+    methods:  ['GET']
+    defaults:
+        _controller: '\App\Controller\RegistrationController::checkEmailAction'
+        _api_item_operation_name: 'registration_check_email'
+
+register_check_username:
+    path: '/register/check_username'
+    methods:  ['GET']
+    defaults:
+        _controller: '\App\Controller\RegistrationController::checkUsernameAction'
+        _api_item_operation_name: 'registration_check_username'

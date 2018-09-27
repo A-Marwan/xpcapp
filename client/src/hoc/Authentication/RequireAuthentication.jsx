@@ -30,7 +30,7 @@ export default function (ComposedComponent) {
 
     const mapStateToProps = (state) => {
         return {
-            authenticated: state.authentication.loggedIn
+            authenticated: state.login.loggedIn
         };
     };
 
