@@ -34,7 +34,7 @@ class Welcome extends React.Component {
 
 const mapStateToProps = (state) => {
     return {
-        loggedIn: state.authentication.loggedIn,
+        loggedIn: state.login.loggedIn,
     };
 };
 

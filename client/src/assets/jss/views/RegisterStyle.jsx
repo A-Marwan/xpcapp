@@ -1,6 +1,6 @@
-import {container, defaultFont, dangerColor, infoColor} from "../Main";
+import {container, defaultFont, dangerColor, successColor, infoColor, darkGrayColor} from "../Main";
 
-const loginPageStyle = {
+const registerPageStyle = {
     container: {
         ...container,
         ...defaultFont,
@@ -8,17 +8,13 @@ const loginPageStyle = {
         position: "relative",
         color: "#FFFFFF"
     },
-    cardHidden: {
-        opacity: "0",
-        transform: "translate3d(0, -60px, 0)"
-    },
     pageHeader: {
         minHeight: "50vh",
         maxHeight: "1200px",
         height: "auto",
         display: "inherit",
         position: "relative",
-        marginTop: "20vh",
+        marginTop: "10vh",
         margin: "0",
         padding: "0",
         border: "0",
@@ -35,8 +31,34 @@ const loginPageStyle = {
             width: "100%",
         }
     },
+    stepper: {
+        backgroundColor: "transparent",
+        marginBottom: "10vh",
+    },
+    stepButton: {
+        margin: "0px",
+        padding: "0px",
+    },
+    stepLabel: {
+        "& span": {
+            paddingRight: "0px",
+        }
+    },
+    stepIconActive: {
+        color: infoColor + "!important",
+    },
+    stepIconCompleted: {
+        color: successColor + "!important",
+    },
     form: {
-        margin: "0"
+        margin: "0",
+        textAlign: "center",
+    },
+    field: {
+        color: darkGrayColor,
+    },
+    fieldHidden: {
+        display: "none",
     },
     formError: {
         textAlign: "center",
@@ -51,9 +73,6 @@ const loginPageStyle = {
         padding: "0",
         marginBottom: "15px",
         fontSize: "20px",
-        "& h4": {
-            margin: "20px",
-        }
     },
     cardFooter: {
         color: "#AAAAAA ",
@@ -73,9 +92,15 @@ const loginPageStyle = {
         padding: "0"
     },
     inputIconsColor: {
-        color: "#495057"
+        color: darkGrayColor,
     },
-
+    hidden: {
+        display: "none",
+    },
+    error: {
+        color: dangerColor,
+        textAlign: "left",
+    },
     "@media (max-width: 599px)": {
         pageHeader: {
             marginTop: "10vh",
@@ -83,4 +108,4 @@ const loginPageStyle = {
     }
 };
 
-export default loginPageStyle;
+export default registerPageStyle;

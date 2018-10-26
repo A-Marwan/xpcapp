@@ -26,7 +26,7 @@ export default function (ComposedComponent) {
     }
 
     function mapStateToProps(state) {
-        return {authenticated: state.authentication.loggedIn};
+        return {authenticated: state.login.loggedIn};
     }
 
     return connect(mapStateToProps)(NotAuthentication);

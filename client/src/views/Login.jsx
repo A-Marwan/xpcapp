@@ -11,7 +11,6 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 // @material-ui/icons
 import { Email, LockOutlined } from "@material-ui/icons";
 // core components
-import Footer from "../components/Footer";
 import GridContainer from "../components/Grid/GridContainer";
 import GridItem from "../components/Grid/GridItem";
 import Button from "../components/Button";
@@ -128,7 +127,6 @@ class LoginPage extends React.Component {
                             </GridItem>
                         </GridContainer>
                     </div>
-                    <Footer whiteFont />
                 </div>
             </div>
         );
@@ -137,9 +135,9 @@ class LoginPage extends React.Component {
 
 const mapStateToProps = (state) => {
     return {
-        loggedIn: state.authentication.loggedIn,
-        error: state.authentication.error,
-        loading: state.authentication.loading,
+        loggedIn: state.login.loggedIn,
+        error: state.login.error,
+        loading: state.login.loading,
     };
 };
 

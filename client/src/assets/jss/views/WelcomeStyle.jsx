@@ -6,28 +6,40 @@ const welcomeStyle = {
         ...defaultFont,
     },
     campaignContainer: {
-        lineHeight: "48px",
+        lineHeight: "64px",
         marginTop: "20%",
         width: "100%",
     },
     campaignMessage: {
-        fontWeight: 300,
+        fontWeight: 600,
         padding: 0,
         margin: 0,
-        fontSize: "48px",
+        fontSize: "64px",
         textAlign: "center",
         textShadow: "0 0 12px rgba(0,0,0,0.5)",
         color: "#f2f2f2",
     },
     campaignSubMessage: {
-        fontWeight: 300,
+        fontWeight: 400,
         padding: 0,
         margin: 0,
-        fontSize: "24px",
+        fontSize: "32px",
         textAlign: "center",
         textShadow: "0 0 12px rgba(0,0,0,0.2)",
-        color: successColor,
+        color: successColor
     },
+
+    "@media (max-width: 599px)": {
+        campaignContainer: {
+            lineHeight: "32px",
+        },
+        campaignMessage: {
+            fontSize: "32px",
+        },
+        campaignSubMessage: {
+            fontSize: "16px",
+        }
+    }
 };
 
 export default welcomeStyle;

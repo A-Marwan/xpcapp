@@ -21,7 +21,8 @@ import messages_fr from "./assets/translations/fr";
 // Import your reducers and routes here
 import Welcome from "./views/Welcome";
 import loginRoutes from "./routes/Authentication.jsx";
-import authentication from "./reducers/Login.jsx";
+import login from "./reducers/Authentication/Login.jsx";
+import register from "./reducers/Authentication/Register.jsx";
 
 addLocaleData([...locale_fr]);
 
@@ -32,7 +33,7 @@ let language = navigator.language.split(/[-_]/)[0];
 language = acceptedLanguages.indexOf(language) !== -1 ? language : "fr";
 
 const store = createStore(
-  combineReducers({routing, form, authentication /* Add your reducers here */}),
+  combineReducers({routing, form, login, register /* Add your reducers here */}),
   applyMiddleware(thunk),
 );
 

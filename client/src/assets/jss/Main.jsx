@@ -59,6 +59,7 @@ const dangerColor = "#f44336";
 const successColor = "#5DD167";
 const infoColor = "#00acc1";
 const roseColor = "#e91e63";
+const darkGrayColor = "#495057";
 const grayColor = "#999999";
 
 const primaryBoxShadow = {
@@ -179,6 +180,7 @@ export {
     infoColor,
     roseColor,
     grayColor,
+    darkGrayColor,
     primaryBoxShadow,
     infoBoxShadow,
     successBoxShadow,
